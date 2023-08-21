@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <link rel="icon" type="image/x-icon" href="images/Summer1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/521c72dd01.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #E527B2
+        }
+        *{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="max-w-[2100px] mx-auto">
+    
+    <header class="bg-[#F9F6E2]">
+        <div class="max-w-[90%] mx-auto flex flex-col-reverse md:flex-row text-center gap-8 md:gap-0 items-center justify-center md:h-screen py-12 md:py-0">
+            <div class="space-y-10 md:w-[50%] lg:w-[40%]">
+                <h3 class="text-3xl">---SALE FEVER---</h3>
+                <h1 class="text-4xl xl:text-5xl font-bold sm:leading-[1.2]">Purchase TK 200 or <br> above & get 20% off</h1>
+                <p class="text-xl font-medium">Use Promo Code <span class="text-white bg-[--primary-color] px-5 py-3 rounded-md">SELL200</span></p>
+            </div>
+            <div class="md:w-[50%] lg:w-[40%]">
+                <img class="w-9/12 md:w-full inline" src="images/Summer1.png" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <main class="bg-gray-100 px-5 py-24">
+        <div class="flex flex-col sm:flex-row gap-5 lg:max-w-[90%] mx-auto">
+            <div class="flex-1">
+                <div>
+                    <div class="flex-1">
+                        <h1 class="text-4xl font-semibold mb-5">Kitchenware</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                <div class="bg-gray-100 py-6 mb-6 rounded">
+                                    <img class="inline" src="images/prod1.png" alt="">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold product-tittle">K. Accessories</h4>
+                                <h3 class="text-xl font-normal text-gray-400"><span class="price">39.00</span> TK</h3>
+                            </div>
+
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                <div class="bg-gray-100 py-6 mb-6 rounded">
+                                    <img class="inline" src="images/prod2.png" alt="">
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold product-tittle">K. Accessories</h4>
+                                <h3 class="text-xl font-normal text-gray-400"><span class="price">25.00</span> TK</h3>
+                            </div>
+
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                <div class="bg-gray-100 py-6 mb-6 rounded">
+                                    <img class="inline" src="images/prod3.png" alt="">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold product-tittle">Home Cooker</h4>
+                                <h3 class="text-xl font-normal text-gray-400"><span class="price">49.00</span> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex-1">
+                        <h1 class="w-full text-4xl font-semibold mb-5 mt-14">Sportswear</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                    <div class="bg-gray-100 py-6 mb-6 rounded">
+                                        <img class="inline" src="images/prod4.png" alt="">
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-regular fa-star text-yellow-500"></i>
+                                        <i class="fa-regular fa-star text-yellow-500"></i>
+                                        <i class="fa-regular fa-star text-yellow-500"></i>
+                                    </div>
+                                    <h4 class="text-xl font-semibold product-tittle">Sports Back Cap</h4>
+                                    <h3 class="text-xl font-normal text-gray-400"><span class="price">49.00</span> TK</h3>
+                            </div>
+
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                    <div class="bg-gray-100 py-6 mb-6 rounded">
+                                        <img class="inline" src="images/prod5.png" alt="">
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-regular fa-star text-yellow-500"></i>
+                                    </div>
+                                    <h4 class="text-xl font-semibold product-tittle">Full Jersey Set</h4>
+                                    <h3 class="text-xl font-normal text-gray-400"><span class="price">69.00</span> TK</h3>
+                            </div>
+
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                    <div class="bg-gray-100 py-6 mb-6 rounded">
+                                        <img class="inline" src="images/prod6.png" alt="">
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-regular fa-star text-yellow-500"></i>
+                                        <i class="fa-regular fa-star text-yellow-500"></i>
+                                    </div>
+                                    <h4 class="text-xl font-semibold product-tittle">Sports cates</h4>
+                                    <h3 class="text-xl font-normal text-gray-400"><span class="price">159.00</span> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex-1">
+                        <h1 class="text-4xl font-semibold mb-5 mt-12">Furniture</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                <div class="bg-gray-100 py-6 mb-6 rounded">
+                                    <img class="inline" src="images/prod7.png" alt="">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-regular fa-star text-yellow-500"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold product-tittle">Single Relax Chair</h4>
+                                <h3 class="text-xl font-normal text-gray-400"><span class="price">185.00</span> TK</h3>
+                            </div>
+
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                                <div class="bg-gray-100 py-6 mb-6 rounded">
+                                    <img class="inline" src="images/prod8.png" alt="">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold product-tittle">Children play</h4>
+                                <h3 class="text-xl font-normal text-gray-400"><span class="price">299.00</span> TK</h3>
+                            </div>
+
+                            <div onclick="getTotalProductPrice(this)" class="text-center bg-white p-4 rounded cursor-pointer">
+                            <div class="bg-gray-100 py-6 mb-6 rounded">
+                                <img class="inline" src="images/prod9.png" alt="">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold product-tittle">Flexible Sofa</h4>
+                            <h3 class="text-xl font-normal text-gray-400"><span class="price">339.00</span> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[100%] xl:w-[340px] sm:w-[40%] md:w-[250px] mt-[60px] rounded relative">
+                <div class="sticky top-0">
+                    <div class="bg-white p-5 rounded space-y-4">
+                        <h1 class="text-2xl font-medium">Have coupon?</h1>
+                        <div class="space-x-0 flex">
+                            <input type="text" placeholder="Coupon code" id="coupon-input" class="border w-[50%] border-gray-300 flex-1 p-2 outline-none rounded-tl rounded-bl">
+                            <button id="coupon-btn" disabled class="bg-[--primary-color] w-[70px] rounded-tr rounded-br text-lg font-semibold text-white disabled:opacity-50">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white mt-5 p-5 rounded space-y-5">
+                        <ol id="product-tittle-area" class="list-decimal ml-5 text-lg font-medium">
+                            
+                        </ol>
+                        <hr>
+                        <h1 class="text-lg font-medium">Total price : <span id="total-product-price" class="text-gray-500">00.00</span> <span class="text-gray-500">TK</span></h1>
+                        <h1 class="text-lg font-medium">Discount : <span id="total-discount" class="text-gray-500">00.00</span> <span class="text-gray-500">TK</span></h1>
+                        <h1 class="text-lg font-medium">Total : <span id="total-price" class="text-gray-500">00.00</span> <span class="text-gray-500">TK</span></h1>
+                        <hr>
+                        <button onclick="my_modal_3.showModal()" disabled id="purchase-btn" class="bg-[--primary-color] w-full text-white py-2 rounded font-medium text-lg disabled:opacity-50">Make Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </main>
+
+    <!-- You can open the modal using ID.showModal() method -->
+    <dialog id="my_modal_3" class="modal">
+    <form method="dialog" class="modal-box">
+        <div class="text-center space-y-6 py-10">
+            <img src="images/congo.png" alt="" class="inline">
+            <h1 class="text-5xl font-bold text-black">Congratulations</h1>
+            <p class="text-xl font-normal text-gray-600">Your Purchase the product</p>
+            <a href="index.html" class="text-lg bg-[--primary-color] px-6 py-2 text-white rounded inline-block">Go Home</a>
+        </div>
+        
+    </form>
+    </dialog>
+
+    <script src="index.js"></script>
+</body>
+</html>
